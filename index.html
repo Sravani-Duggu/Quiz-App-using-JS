@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="category-selection">
+      <h1>Quiz App</h1>
+      <h2>Select a Category</h2>
+      <button onclick="startQuiz('General Knowledge')">General Knowledge</button>
+      <button onclick="startQuiz('Science')">Science</button>
+      <button onclick="startQuiz('Math')">Math</button>
+      <button onclick="startQuiz('History')">History</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+      <h2 id="question-text"></h2>
+      <div id="options"></div>
+      <div id="timer">Time Left: <span id="time-left"></span>s</div>
+      <div id="progress-bar"><div></div></div>
+    </div>
+
+    <div id="celebration"></div>
+
+    <div id="result" style="display: none;">
+      <h2 id="score"></h2>
+      <p id="high-score-message"></p>
+      <button onclick="resetQuiz()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
